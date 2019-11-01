@@ -1,1 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  padding: 1.25rem 0.625rem;
+  border-bottom: 2px solid black;
+  position: sticky;
+  top: 0;
+  margin-bottom: 1.5rem;
+}
+header h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+main .create-note-form {
+  display: flex;
+  justify-content: space-between;
+}
+main .create-note-form .search-field {
+  border: 2px solid black;
+}
+
+footer {
+  width: 100%;
+  padding: 0.625rem;
+  border-top: 2px solid black;
+  position: fixed;
+  bottom: 0;
+}
+footer p {
+  font-size: 1em;
+  font-weight: bold;
+}

@@ -5,10 +5,39 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/bundle.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>TODOList</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="" method="post" id="createNoteForm" class="create-note-form">
+                <div class="search-field">
+                    <button class="search-button"></button>
+                    <input type="search" placeholder="search by title">
+                </div>
+                <select form="createNoteForm" name="filter-notes-by-status">
+                    <option value="all" selected hidden>all</option>
+                    <option value="open">open</option>
+                    <option value="done">done</option>
+                </select>
+                <select form="createNoteForm" name="filter-notes-by-priority">
+                    <option value="all" selected hidden>all</option>
+                    <option value="high">high</option>
+                    <option value="normal">normal</option>
+                    <option value="low">low</option>
+                </select>
+                <button value="create">Create</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Yana Mysyk</p>
+    </footer>
 <script src="dist/bundle.js"></script>
 </body>
 </html>
