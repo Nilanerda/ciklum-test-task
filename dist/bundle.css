@@ -57,6 +57,13 @@ main .create-note-form .search-field .search-button {
   height: 2rem;
   position: absolute;
   margin-right: 1rem;
+  cursor: pointer;
+  background-color: white;
+  background-image: url(images/c3ec00650365a1a22662480b51ff315f.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
 main .create-note-form select {
   font-family: "Red Hat Display", sans-serif;

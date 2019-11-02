@@ -67,6 +67,15 @@ main {
         height: 2rem;
         position: absolute;
         margin-right: 1rem;
+        cursor: pointer;
+        background: {
+          color: white;
+          image: url("../images/search.svg");
+          size: 80%;
+          repeat: no-repeat;
+          position: center;
+        };
+        border: none;
       }
     }
     select {
