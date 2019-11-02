@@ -98,6 +98,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     .notes-field-instance {
+      position: relative;
       border: 2px solid black;
       padding: 1rem 1rem 2rem;
       margin: $gap/2;
@@ -140,7 +141,7 @@ main {
             weight: bold;
           };
           background: {
-            color: white;
+            color: transparent;
           };
           border: {
             width: 2px;
@@ -161,6 +162,7 @@ main {
           };
           right: 0;
           top: 4.625rem;
+          display: none;
           & button {
             width: 7rem;
             background: {
@@ -204,11 +206,33 @@ main {
           }
         }
       }
+      .status-done-field {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        border: {
+          width: 2px;
+          style: solid;
+          color: #000;
+        }
+        background: {
+          color: #ffffff;
+          image: url("../images/correct-symbol.svg");
+          size: 85%;
+          repeat: no-repeat;
+          position: center;
+        };
+        top: -1rem;
+        right: -2px;
+      }
+    }
+    .status-done-styles {
+      background: {
+        color: #c3c3c3;
+      };
     }
   }
 }
-
-
 
 footer {
   width: 100%;
