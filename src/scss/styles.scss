@@ -19,6 +19,20 @@
   outline: none;
 }
 
+@mixin link-button {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  text-align: center;
+  border-radius: 0.8125rem;
+  cursor: pointer;
+  border: {
+    width: 2px;
+    color: #000;
+    style: solid;
+  };
+}
+
 $gap: 2rem;
 
 body {
@@ -30,6 +44,60 @@ body {
   margin: 0 auto;
 }
 
+.modal-window-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: {
+    color: rgba(222, 222, 222, 0.85);
+  };
+  opacity: 1;
+  z-index: 10;
+  display: none;
+  pointer-events: none;
+  &:target {
+    display: block;
+    pointer-events: auto;
+  }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0.8rem;
+    transform: translate(-50%,-45%);
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    background: {
+      color: #ffffff;
+    };
+    border: {
+      width: 2px;
+      style: solid;
+      color: #000;
+    };
+    .modal-window-sections {
+      label {
+        display: block;
+        margin-bottom: 0.3rem;
+      }
+      flex: 0 0 calc(10% - #{$gap});
+      margin: 1rem;
+    }
+    .modal-window-buttons {
+      display: flex;
+      justify-content: space-between;
+      a {
+        @include link-button;
+        padding: 0.5rem;
+        min-width: 7rem;
+      }
+    }
+  }
+}
+
 header {
   width: 100%;
   padding: 1.25rem 0.625rem;
@@ -38,7 +106,7 @@ header {
   top: 0;
   margin-bottom: 1rem;
   background-color: #fff;
-  z-index: 1;
+  z-index: 11;
   h1 {
     font: {
       size: 1.25rem;
@@ -87,10 +155,9 @@ main {
     }
     .search-field-create-button {
       @include search-items;
+      @include link-button;
       margin: 1rem;
-      border-radius: 0.8125rem;
       flex: 0 0 calc(16% - #{$gap});
-      cursor: pointer;
     }
   }
   .notes-field {
@@ -241,7 +308,7 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: #fff;
-  z-index: 1;
+  z-index: 11;
   p {
     font: {
       size: 1em;

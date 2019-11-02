@@ -14,6 +14,30 @@
         <h1>TODOList</h1>
     </header>
     <main>
+        <div class="modal-window-field" id="modalWindow">
+            <div class="modal-window">
+                <div class="modal-window-sections modal-window-title">
+                    <label for="modalWindowTitle">Title:</label>
+                    <input type="text" id="modalWindowTitle" placeholder="Title">
+                </div>
+                <div class="modal-window-sections modal-window-description">
+                    <label for="modalWindowDescription">Description:</label>
+                    <textarea name="" id="modalWindowDescription" cols="30" rows="10">Description</textarea>
+                </div>
+                <div class="modal-window-sections modal-window-priority">
+                    <label for="modalWindowPriority">Priority</label>
+                    <select name="modal-window-priority-select" id="modalWindowPriority">
+                        <option value="" selected>High</option>
+                        <option value="">Normal</option>
+                        <option value="">Low</option>
+                    </select>
+                </div>
+                <div class="modal-window-sections modal-window-buttons">
+                    <a href="#">Cancel</a>
+                    <a href="">Save</a>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <form action="" method="post" id="createNoteForm" class="create-note-form">
                 <div class="search-field">
@@ -31,7 +55,7 @@
                     <option value="normal">normal</option>
                     <option value="low">low</option>
                 </select>
-                <button value="create" class="search-field-create-button">Create</button>
+                <a class="search-field-create-button" href="#modalWindow">Create</a>
             </form>
         </div>
         <div class="container">
