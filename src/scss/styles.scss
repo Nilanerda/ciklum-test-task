@@ -15,9 +15,8 @@
   @include basic-font;
   background: none;
   border: 2px solid black;
-  padding: 0.3rem;
+  padding: 0.5rem;
   outline: none;
-  width: 20%;
 }
 
 $gap: 2rem;
@@ -37,7 +36,7 @@ header {
   border-bottom: 2px solid black;
   position: sticky;
   top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   background-color: #fff;
   z-index: 1;
   h1 {
@@ -52,21 +51,22 @@ main {
   .create-note-form {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     .search-field {
       border: 2px solid black;
+      flex: 0 0 calc(33% - #{$gap});
+      margin: 1rem;
       input[type='search'] {
         @include search-items;
         border: none;
-        width: 19rem;
         margin-left: 2.5rem;
         &::placeholder {
           color: black;
         }
       }
       .search-button {
-        width: 2rem;
-        height: 2rem;
+        width: 2.4rem;
+        height: 2.4rem;
         position: absolute;
         margin-right: 1rem;
         cursor: pointer;
@@ -82,14 +82,14 @@ main {
     }
     select {
       @include search-items;
-      option {
-        padding: 1rem;
-      }
+      margin: 1rem;
+      flex: 0 0 calc(25% - #{$gap});
     }
     .search-field-create-button {
       @include search-items;
+      margin: 1rem;
       border-radius: 0.8125rem;
-      width: 15%;
+      flex: 0 0 calc(16% - #{$gap});
       cursor: pointer;
     }
   }

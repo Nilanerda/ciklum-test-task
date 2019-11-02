@@ -20,7 +20,7 @@ header {
   border-bottom: 2px solid black;
   position: sticky;
   top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   background-color: #fff;
   z-index: 1;
 }
@@ -32,29 +32,29 @@ header h1 {
 main .create-note-form {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 main .create-note-form .search-field {
   border: 2px solid black;
+  flex: 0 0 calc(33% - 2rem);
+  margin: 1rem;
 }
 main .create-note-form .search-field input[type=search] {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   background: none;
   border: 2px solid black;
-  padding: 0.3rem;
+  padding: 0.5rem;
   outline: none;
-  width: 20%;
   border: none;
-  width: 19rem;
   margin-left: 2.5rem;
 }
 main .create-note-form .search-field input[type=search]::placeholder {
   color: black;
 }
 main .create-note-form .search-field .search-button {
-  width: 2rem;
-  height: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
   position: absolute;
   margin-right: 1rem;
   cursor: pointer;
@@ -70,23 +70,21 @@ main .create-note-form select {
   font-size: 16px;
   background: none;
   border: 2px solid black;
-  padding: 0.3rem;
+  padding: 0.5rem;
   outline: none;
-  width: 20%;
-}
-main .create-note-form select option {
-  padding: 1rem;
+  margin: 1rem;
+  flex: 0 0 calc(25% - 2rem);
 }
 main .create-note-form .search-field-create-button {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   background: none;
   border: 2px solid black;
-  padding: 0.3rem;
+  padding: 0.5rem;
   outline: none;
-  width: 20%;
+  margin: 1rem;
   border-radius: 0.8125rem;
-  width: 15%;
+  flex: 0 0 calc(16% - 2rem);
   cursor: pointer;
 }
 main .notes-field {
