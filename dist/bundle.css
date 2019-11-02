@@ -49,6 +49,9 @@ main .create-note-form .search-field input[type=search] {
   width: 19rem;
   margin-left: 2.5rem;
 }
+main .create-note-form .search-field input[type=search]::placeholder {
+  color: black;
+}
 main .create-note-form .search-field .search-button {
   width: 2rem;
   height: 2rem;
@@ -106,6 +109,7 @@ main .notes-field .notes-field-instance .notes-field-instance-content {
 main .notes-field .notes-field-instance .additional-options-field {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 main .notes-field .notes-field-instance .additional-options-field .notes-field-instance-priority {
   padding: 1rem;
@@ -126,6 +130,48 @@ main .notes-field .notes-field-instance .additional-options-field .notes-field-i
   border-radius: 1rem;
   cursor: pointer;
   outline: none;
+}
+main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown {
+  position: absolute;
+  list-style: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  right: 0;
+  top: 4.625rem;
+}
+main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown button {
+  width: 7rem;
+  background-color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #000;
+  padding: 0.8rem;
+  cursor: pointer;
+  outline: none;
+  background-color: #c3c3c3;
+  font-weight: bold;
+  font-size: 1rem;
+}
+main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown button:hover {
+  background-color: #fff;
+}
+main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown li:last-of-type button {
+  border-bottom: none;
+}
+main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown:before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 67%;
+  top: -1.0625rem;
+  width: 0;
+  height: 0;
+  border-left: 0.9375rem solid transparent;
+  border-right: 0.9375rem solid transparent;
+  border-bottom: 0.9375rem solid #000000;
 }
 
 footer {
