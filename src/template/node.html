@@ -4,16 +4,17 @@
     <p class="notes-field-instance-content">{{description}}</p>
     <div class="additional-options-field">
         <p class="notes-field-instance-priority">{{priority}}</p>
-        <button class="notes-field-instance-more-options">...</button>
-        <ul class="more-options-dropdown">
+        <label for="notesFieldMoreOptionsButton" class="notes-field-instance-more-options" >...</label>
+        <input type="checkbox" id="notesFieldMoreOptionsButton">
+        <ul class="more-options-dropdown" id="moreOptionsDropdown">
             <li>
-                <button>done</button>
+                <button id="moreOptionsStatusDone">done</button>
             </li>
             <li>
-                <button>edit</button>
+                <button id="moreOptionsEditNote">edit</button>
             </li>
             <li>
-                <button>delete</button>
+                <button id="moreOptionsDeleteNote">delete</button>
             </li>
         </ul>
     </div>

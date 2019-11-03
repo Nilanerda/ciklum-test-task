@@ -258,13 +258,19 @@ main {
           cursor: pointer;
           outline: none;
         }
+        [id^=notesFieldMoreOptionsButton], [id^=notesFieldMoreOptionsButton] + * {
+          display: none;
+        }
+        [id^=notesFieldMoreOptionsButton]:checked + * {
+          display: block;
+        }
         .more-options-dropdown {
           position: absolute;
           list-style: none;
           z-index: 2;
           @include dark-border;
           right: 0;
-          top: 3.625rem;
+          top: 4.5rem;
           display: none;
           & button {
             width: 7rem;

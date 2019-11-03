@@ -1,5 +1,5 @@
-let arrayOfNotes = [];
-let template = require('../template/node.html');
+const arrayOfNotes = [];
+const template = require('../template/node.html');
 
 const createElement = function createNoteElement () {
     let noteTitleValue = document.getElementById('modalWindowTitle').value;
