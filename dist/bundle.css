@@ -236,7 +236,7 @@ main .notes-field .notes-field-instance {
   flex-direction: column;
   font-weight: bold;
 }
-main .notes-field .notes-field-instance .notes-field-instancef-title {
+main .notes-field .notes-field-instance .notes-field-instance-title {
   flex: 1;
   margin-bottom: 1rem;
 }
