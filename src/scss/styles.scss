@@ -180,7 +180,6 @@ main {
         width: 2.4rem;
         height: 2.4rem;
         margin-right: 1rem;
-        cursor: pointer;
         background: {
           color: white;
           image: url("../images/search.svg");
@@ -258,12 +257,12 @@ main {
           cursor: pointer;
           outline: none;
         }
-        [id^=notesFieldMoreOptionsButton], [id^=notesFieldMoreOptionsButton] + * {
-          display: none;
-        }
-        [id^=notesFieldMoreOptionsButton]:checked + * {
-          display: block;
-        }
+        //[id^=notesFieldMoreOptionsButton], [id^=notesFieldMoreOptionsButton] + * {
+        //  display: none;
+        //}
+        //[id^=notesFieldMoreOptionsButton]:checked + * {
+        //  display: block;
+        //}
         .more-options-dropdown {
           position: absolute;
           list-style: none;
@@ -271,7 +270,7 @@ main {
           @include dark-border;
           right: 0;
           top: 4.5rem;
-          display: none;
+          display: block;
           & button {
             width: 7rem;
             background: {

@@ -173,7 +173,6 @@ main .create-note-form .search-field .search-button {
   width: 2.4rem;
   height: 2.4rem;
   margin-right: 1rem;
-  cursor: pointer;
   background-color: white;
   background-image: url(images/c3ec00650365a1a22662480b51ff315f.svg);
   background-size: 80%;
@@ -271,12 +270,6 @@ main .notes-field .notes-field-instance .additional-options-field .notes-field-i
   cursor: pointer;
   outline: none;
 }
-main .notes-field .notes-field-instance .additional-options-field [id^=notesFieldMoreOptionsButton], main .notes-field .notes-field-instance .additional-options-field [id^=notesFieldMoreOptionsButton] + * {
-  display: none;
-}
-main .notes-field .notes-field-instance .additional-options-field [id^=notesFieldMoreOptionsButton]:checked + * {
-  display: block;
-}
 main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown {
   position: absolute;
   list-style: none;
@@ -286,7 +279,7 @@ main .notes-field .notes-field-instance .additional-options-field .more-options-
   border-color: #000;
   right: 0;
   top: 4.5rem;
-  display: none;
+  display: block;
 }
 main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown button {
   width: 7rem;
