@@ -161,15 +161,15 @@ main {
       @include dark-border;
       flex: 0 0 calc(33% - #{$gap});
       margin: 1rem;
+      display: inline-flex;
       input[type='search'] {
         @include search-items;
         border: none;
-        margin-left: 2.5rem;
+        width: 100%;
       }
       .search-button {
         width: 2.4rem;
         height: 2.4rem;
-        position: absolute;
         margin-right: 1rem;
         cursor: pointer;
         background: {

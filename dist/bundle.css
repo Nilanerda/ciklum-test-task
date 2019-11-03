@@ -139,6 +139,7 @@ main .create-note-form .search-field {
   border-color: #000;
   flex: 0 0 calc(33% - 2rem);
   margin: 1rem;
+  display: inline-flex;
 }
 main .create-note-form .search-field input[type=search] {
   font-family: "Red Hat Display", sans-serif;
@@ -147,7 +148,7 @@ main .create-note-form .search-field input[type=search] {
   padding: 0.5rem;
   outline: none;
   border: none;
-  margin-left: 2.5rem;
+  width: 100%;
 }
 main .create-note-form .search-field input[type=search]::placeholder {
   color: black;
@@ -155,7 +156,6 @@ main .create-note-form .search-field input[type=search]::placeholder {
 main .create-note-form .search-field .search-button {
   width: 2.4rem;
   height: 2.4rem;
-  position: absolute;
   margin-right: 1rem;
   cursor: pointer;
   background-color: white;
