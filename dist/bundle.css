@@ -35,7 +35,7 @@ body {
   top: 50%;
   left: 50%;
   padding: 0.8rem;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -48%);
   display: flex;
   flex-direction: column;
   width: 22rem;
@@ -45,12 +45,55 @@ body {
   border-color: #000;
 }
 .modal-window-field .modal-window .modal-window-sections {
-  flex: 0 0 calc(10% - 2rem);
-  margin: 1rem;
+  margin: 0.5rem 1rem;
 }
 .modal-window-field .modal-window .modal-window-sections label {
   display: block;
   margin-bottom: 0.3rem;
+}
+.modal-window-field .modal-window .modal-window-title input {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background: none;
+  padding: 0.5rem;
+  outline: none;
+  width: 100%;
+}
+.modal-window-field .modal-window .modal-window-title input::placeholder {
+  color: black;
+}
+.modal-window-field .modal-window .modal-window-description textarea {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background: none;
+  padding: 0.5rem;
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+.modal-window-field .modal-window .modal-window-description textarea::placeholder {
+  color: black;
+}
+.modal-window-field .modal-window .modal-window-priority select {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background: none;
+  padding: 0.5rem;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  width: 100%;
+  margin-bottom: 4.5rem;
+}
+.modal-window-field .modal-window .modal-window-priority select::placeholder {
+  color: black;
 }
 .modal-window-field .modal-window .modal-window-buttons {
   display: flex;
@@ -64,8 +107,8 @@ body {
   border-radius: 0.8125rem;
   cursor: pointer;
   border-width: 2px;
-  border-color: #000;
   border-style: solid;
+  border-color: #000;
   padding: 0.5rem;
   min-width: 7rem;
 }
@@ -91,7 +134,9 @@ main .create-note-form {
   margin-bottom: 1rem;
 }
 main .create-note-form .search-field {
-  border: 2px solid black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
   flex: 0 0 calc(33% - 2rem);
   margin: 1rem;
 }
@@ -99,7 +144,6 @@ main .create-note-form .search-field input[type=search] {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   background: none;
-  border: 2px solid black;
   padding: 0.5rem;
   outline: none;
   border: none;
@@ -125,17 +169,21 @@ main .create-note-form select {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   background: none;
-  border: 2px solid black;
   padding: 0.5rem;
   outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
   margin: 1rem;
   flex: 0 0 calc(25% - 2rem);
+}
+main .create-note-form select::placeholder {
+  color: black;
 }
 main .create-note-form .search-field-create-button {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   background: none;
-  border: 2px solid black;
   padding: 0.5rem;
   outline: none;
   text-decoration: none;
@@ -145,10 +193,13 @@ main .create-note-form .search-field-create-button {
   border-radius: 0.8125rem;
   cursor: pointer;
   border-width: 2px;
-  border-color: #000;
   border-style: solid;
+  border-color: #000;
   margin: 1rem;
   flex: 0 0 calc(16% - 2rem);
+}
+main .create-note-form .search-field-create-button::placeholder {
+  color: black;
 }
 main .notes-field {
   display: flex;
@@ -156,20 +207,19 @@ main .notes-field {
   flex-wrap: wrap;
 }
 main .notes-field .notes-field-instance {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
   position: relative;
-  border: 2px solid black;
   padding: 1rem 1rem 2rem;
   margin: 1rem;
-  flex: 0 0 calc(33% - 2rem);
+  flex: 0 0 calc(33.3% - 2rem);
   min-height: 45vh;
   display: flex;
   flex-direction: column;
   font-weight: bold;
 }
-main .notes-field .notes-field-instance:nth-child(3n) {
-  page-break-after: always;
-}
-main .notes-field .notes-field-instance .notes-field-instance-title {
+main .notes-field .notes-field-instance .notes-field-instancef-title {
   flex: 1;
   margin-bottom: 1rem;
 }
@@ -186,8 +236,10 @@ main .notes-field .notes-field-instance .additional-options-field .notes-field-i
   padding: 1rem;
   min-width: 6rem;
   text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
   border-style: dashed solid;
-  border-color: black;
   border-radius: 1.2rem;
 }
 main .notes-field .notes-field-instance .additional-options-field .notes-field-instance-more-options {
@@ -197,7 +249,7 @@ main .notes-field .notes-field-instance .additional-options-field .notes-field-i
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: #000;
   border-radius: 1rem;
   cursor: pointer;
   outline: none;
@@ -205,21 +257,23 @@ main .notes-field .notes-field-instance .additional-options-field .notes-field-i
 main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown {
   position: absolute;
   list-style: none;
+  z-index: 2;
   border-width: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: #000;
   right: 0;
-  top: 4.625rem;
-  display: none;
+  top: 3.625rem;
+  display: block;
 }
 main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown button {
   width: 7rem;
   background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #000;
   padding: 0.8rem;
   cursor: pointer;
   outline: none;
@@ -246,6 +300,7 @@ main .notes-field .notes-field-instance .additional-options-field .more-options-
   border-bottom: 0.9375rem solid #000000;
 }
 main .notes-field .notes-field-instance .status-done-field {
+  display: none;
   position: absolute;
   width: 2rem;
   height: 2rem;
