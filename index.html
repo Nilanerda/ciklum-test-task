@@ -10,61 +10,62 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>TODOList</h1>
-    </header>
-    <main>
-        <div class="modal-window-field" id="modalWindow">
-            <div class="modal-window">
-                <div class="modal-window-sections modal-window-title">
-                    <label for="modalWindowTitle">Title:</label>
-                    <input type="text" id="modalWindowTitle" placeholder="Title">
-                </div>
-                <div class="modal-window-sections modal-window-description">
-                    <label for="modalWindowDescription">Description:</label>
-                    <textarea name="modal-window-description" id="modalWindowDescription" cols="20" rows="4" placeholder="Description"></textarea>
-                </div>
-                <div class="modal-window-sections modal-window-priority">
-                    <label for="modalWindowPriority">Priority:</label>
-                    <select name="modal-window-priority-select" id="modalWindowPriority">
-                        <option value="High" selected>High</option>
-                        <option value="Normal">Normal</option>
-                        <option value="Low">Low</option>
-                    </select>
-                </div>
-                <div class="modal-window-sections modal-window-buttons">
-                    <a href="#">Cancel</a>
-                    <button id="modalWindowCreateElement">Save</button>
-                </div>
+<header>
+    <h1>TODOList</h1>
+</header>
+<main>
+    <div class="modal-window-field" id="modalWindow">
+        <div class="modal-window">
+            <input type="hidden" id="modalWindowId">
+            <div class="modal-window-sections modal-window-title">
+                <label for="modalWindowTitle">Title:</label>
+                <input type="text" id="modalWindowTitle" placeholder="Title">
+            </div>
+            <div class="modal-window-sections modal-window-description">
+                <label for="modalWindowDescription">Description:</label>
+                <textarea name="modal-window-description" id="modalWindowDescription" cols="20" rows="4" placeholder="Description"></textarea>
+            </div>
+            <div class="modal-window-sections modal-window-priority">
+                <label for="modalWindowPriority">Priority:</label>
+                <select name="modal-window-priority-select" id="modalWindowPriority">
+                    <option value="high" selected>High</option>
+                    <option value="normal">Normal</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <div class="modal-window-sections modal-window-buttons">
+                <a href="#" id="modalWindowClose">Cancel</a>
+                <button id="modalWindowCreateElement">Save</button>
             </div>
         </div>
-        <div class="container">
-            <form action="" method="post" id="createNoteForm" class="create-note-form">
-                <div class="search-field">
-                    <div class="search-button"></div>
-                    <input type="search" placeholder="search by title" id="searchInput">
-                </div>
-                <select form="createNoteForm" name="filter-notes-by-status">
-                    <option value="all" selected hidden>all</option>
-                    <option value="open">open</option>
-                    <option value="done">done</option>
-                </select>
-                <select form="createNoteForm" name="filter-notes-by-priority">
-                    <option value="all" selected hidden>all</option>
-                    <option value="high">high</option>
-                    <option value="normal">normal</option>
-                    <option value="low">low</option>
-                </select>
-                <a class="search-field-create-button" href="#modalWindow">Create</a>
-            </form>
-        </div>
-        <div class="container">
-            <section class="notes-field" id="notes-field"></section>
-        </div>
-    </main>
-    <footer>
-        <p>Yana Mysyk</p>
-    </footer>
+    </div>
+    <div class="container">
+        <form action="" method="post" id="createNoteForm" class="create-note-form">
+            <div class="search-field">
+                <div class="search-button"></div>
+                <input class="searchable" type="search" data-name="title" placeholder="search by title" id="searchInput">
+            </div>
+            <select class="searchable" data-name="status" form="createNoteForm" name="filter-notes-by-status">
+                <option value="all" selected>all</option>
+                <option value="open">open</option>
+                <option value="done">done</option>
+            </select>
+            <select class="searchable" data-name="priority" form="createNoteForm" name="filter-notes-by-priority">
+                <option value="all" selected>all</option>
+                <option value="high">high</option>
+                <option value="normal">normal</option>
+                <option value="low">low</option>
+            </select>
+            <a class="search-field-create-button" href="#modalWindow">Create</a>
+        </form>
+    </div>
+    <div class="container">
+        <section class="notes-field" id="notes-field"></section>
+    </div>
+</main>
+<footer>
+    <p>Yana Mysyk</p>
+</footer>
 <script src="dist/bundle.js"></script>
 </body>
 </html>

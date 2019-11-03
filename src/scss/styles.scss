@@ -32,6 +32,7 @@
 }
 
 @mixin link-button {
+  @include basic-font;
   text-decoration: none;
   color: #000;
   display: block;
@@ -256,21 +257,18 @@ main {
           };
           cursor: pointer;
           outline: none;
+          &:hover + .more-options-dropdown{
+            display: block;
+          }
         }
-        //[id^=notesFieldMoreOptionsButton], [id^=notesFieldMoreOptionsButton] + * {
-        //  display: none;
-        //}
-        //[id^=notesFieldMoreOptionsButton]:checked + * {
-        //  display: block;
-        //}
         .more-options-dropdown {
+          display: none;
           position: absolute;
           list-style: none;
           z-index: 2;
           @include dark-border;
           right: 0;
-          top: 4.5rem;
-          display: block;
+          top: 3.5rem;
           & button {
             width: 7rem;
             background: {
@@ -297,17 +295,8 @@ main {
           & li:last-of-type button {
             border-bottom: none;
           }
-          &:before {
+          &:hover {
             display: block;
-            content: "";
-            position: absolute;
-            left: 67%;
-            top: -1.0625rem;
-            width: 0;
-            height: 0;
-            border-left: 0.9375rem solid transparent;
-            border-right: 0.9375rem solid transparent;
-            border-bottom: 0.9375rem solid #000000;
           }
         }
       }

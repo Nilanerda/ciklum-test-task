@@ -100,6 +100,8 @@ body {
   justify-content: space-between;
 }
 .modal-window-field .modal-window .modal-window-buttons a {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
   text-decoration: none;
   color: #000;
   display: block;
@@ -114,6 +116,8 @@ body {
   min-width: 7rem;
 }
 .modal-window-field .modal-window .modal-window-buttons button {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
   text-decoration: none;
   color: #000;
   display: block;
@@ -201,6 +205,8 @@ main .create-note-form .search-field-create-button {
   background: none;
   padding: 0.5rem;
   outline: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
   text-decoration: none;
   color: #000;
   display: block;
@@ -270,7 +276,11 @@ main .notes-field .notes-field-instance .additional-options-field .notes-field-i
   cursor: pointer;
   outline: none;
 }
+main .notes-field .notes-field-instance .additional-options-field .notes-field-instance-more-options:hover + .more-options-dropdown {
+  display: block;
+}
 main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown {
+  display: none;
   position: absolute;
   list-style: none;
   z-index: 2;
@@ -278,8 +288,7 @@ main .notes-field .notes-field-instance .additional-options-field .more-options-
   border-style: solid;
   border-color: #000;
   right: 0;
-  top: 4.5rem;
-  display: block;
+  top: 3.5rem;
 }
 main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown button {
   width: 7rem;
@@ -303,17 +312,8 @@ main .notes-field .notes-field-instance .additional-options-field .more-options-
 main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown li:last-of-type button {
   border-bottom: none;
 }
-main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown:before {
+main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown:hover {
   display: block;
-  content: "";
-  position: absolute;
-  left: 67%;
-  top: -1.0625rem;
-  width: 0;
-  height: 0;
-  border-left: 0.9375rem solid transparent;
-  border-right: 0.9375rem solid transparent;
-  border-bottom: 0.9375rem solid #000000;
 }
 main .notes-field .notes-field-instance .status-done-field {
   display: none;
