@@ -106,11 +106,27 @@ body {
   text-align: center;
   border-radius: 0.8125rem;
   cursor: pointer;
+  outline: none;
   border-width: 2px;
   border-style: solid;
   border-color: #000;
   padding: 0.5rem;
   min-width: 7rem;
+}
+.modal-window-field .modal-window .modal-window-buttons button {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  text-align: center;
+  border-radius: 0.8125rem;
+  cursor: pointer;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  padding: 0.5rem;
+  min-width: 7rem;
+  background-color: white;
 }
 
 header {
@@ -192,6 +208,7 @@ main .create-note-form .search-field-create-button {
   text-align: center;
   border-radius: 0.8125rem;
   cursor: pointer;
+  outline: none;
   border-width: 2px;
   border-style: solid;
   border-color: #000;
@@ -263,7 +280,7 @@ main .notes-field .notes-field-instance .additional-options-field .more-options-
   border-color: #000;
   right: 0;
   top: 3.625rem;
-  display: block;
+  display: none;
 }
 main .notes-field .notes-field-instance .additional-options-field .more-options-dropdown button {
   width: 7rem;

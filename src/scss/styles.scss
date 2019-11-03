@@ -38,6 +38,7 @@
   text-align: center;
   border-radius: 0.8125rem;
   cursor: pointer;
+  outline: none;
   @include dark-border;
 }
 
@@ -126,6 +127,14 @@ body {
         @include link-button;
         padding: 0.5rem;
         min-width: 7rem;
+      }
+      button {
+        @include link-button;
+        padding: 0.5rem;
+        min-width: 7rem;
+        background:  {
+          color: white;
+        };
       }
     }
   }
@@ -256,7 +265,7 @@ main {
           @include dark-border;
           right: 0;
           top: 3.625rem;
-          display: block;
+          display: none;
           & button {
             width: 7rem;
             background: {

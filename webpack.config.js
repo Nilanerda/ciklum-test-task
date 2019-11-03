@@ -10,6 +10,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/,
+                loader: 'mustache-loader',
+                options: {
+                    implementation: require("mustache")
+                }
+            },
+            {
                 test: /\.js$/,
             },
             {
