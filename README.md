@@ -9,6 +9,9 @@
     <li>filtrate tickets by status and priority</li>
   </ul>
 </p>
+<p>
+  Js file was destructured - helper.js create random id for every ticket, storage.js - manipulation with local storage
+</p>
 <p>During creation have been used:
   <ul>
     <li>Node.js</li>
@@ -19,3 +22,4 @@
     <li>Google search and a dozen cups of tea :)</li>
   </ul>
 </p>
+
